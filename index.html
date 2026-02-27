@@ -1,26 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1"
- <title>Tyrkanych Korneliia </title>
-  <style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Тирканич Корнелія — Веб-дизайнерка</title>
+  <link rel="stylesheet" href="index.css">
 
-    body { margin:0; }
-    #intro { height: 100vh; }
-  </style>
 </head>
 <body>
 
-<div id="intro"></div>
+  <div id="intro">
+    <div class="hero-content">
+      <img src="foto/myphoto.jpg" alt="Тирканич Корнелія" class="avatar">
 
-<script src="three.min.js"></script>
-<script src="vanta.fog.min.js"></script>
+      <h1>Тирканич Корнелія</h1>
+      <h2 class="subtitle">Веб-дизайнерка</h2>
+
+      <div class="description">
+        Створюю сучасні, естетичні та зручні інтерфейси, які допомагають бізнесу виділятися та приносити результат.
+      </div>
+
+      <a href="#projects" class="btn">Переглянути роботи</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2>Про мене</h2>
+
+    <div class="skills">
+      <div class="skill">UI/UX Дизайн</div>
+      <div class="skill">Веб-дизайн</div>
+      <div class="skill">3D-Моделювання</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Роботи</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="foto/blender1.jpg" alt="E-commerce">
+        <div class="subtitle">Ozon</div>
+      </div>
+      <div class="project-card">
+        <img src="foto/blender2.jpg" alt="Мобільний лендінг">
+        <div class="subtitle">My name</div>
+      </div>
+      <div class="project-card">
+        <img src="foto/blender3.jpg" alt="Корпоративний сайт">
+        <div class="subtitle">squares</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Контакти</h2>
+
+    <form>
+      <input type="text" placeholder="Ваше ім'я" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="6" placeholder="Повідомлення" required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </section>
+
+  <footer>
+   <br > © 2025 Тирканич Корнелія<br>
+    <a href="#">Instagram</a> • <a href="#">Telegram</a> • <a href="#">github</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
 <script src="app.js"></script>
-<script>
-VANTA.FOG({
-  el: "#intro"
-})
-</script>
 
 </body>
 </html>
